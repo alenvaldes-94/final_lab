@@ -25,4 +25,4 @@ def test_homepage():
     wait_up(f"{BASE}/health")
     r = requests.get(f"{BASE}/")
     assert r.status_code == 200
-    assert "Hola mundo CI/CD" in r.text
+    assert "hola mundo, lab final" in r.text
